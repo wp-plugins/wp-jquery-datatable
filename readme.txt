@@ -36,7 +36,7 @@ Plugin's settings will display 'WP jQuery DataTable' tab
 
 =Shortcode Parameters=
 
-1. id: =(Required) Used table id as a parameter of id. Example [wp_jdt id="demo"] and table is <table id="demo">...</table>  
+1. id: =(Required) Used table id as a parameter of id. Example [wp_jdt id="demo"] and table is `<table id="demo">...</table>`  
 2. info: Show information about the table. It return boolean. By default 'true'. Example [wp_jdt info="false"]
 3. paging: Allow table pagination. It return boolean. By default 'true'. Example [wp_jdt paging="false"]
 4. page_length: Allow number of rows to display on page when using pagination. It return number. By default '10'. Example [wp_jdt page_length="5"]
