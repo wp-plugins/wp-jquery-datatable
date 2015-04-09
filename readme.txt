@@ -32,7 +32,18 @@ Plugin's settings will display 'WP jQuery DataTable' tab
 2. Activate the plugin.
 3. New Tab called WP jQuery DataTable will be genereate.
 4. You can add set setting.
-5. Use short code at any pages/posts e.g.[wp_jdt id="table  id here"] 
+5. Use short code at any pages/posts e.g.[wp_jdt id="table  id here"]
+
+=  Plugin's settings =
+
+First of Save Plugin's settings. It will display 'WP jQuery DataTable' tab
+
+1. WP Jquery Data table plugin can help the WordPress website owner to insert table anywhere for displaying any information in tabular form, which will also have some cool features like option of selecting no. of pages, columns and pagination to be displayed in one page along with the search option to access the relevant data immediately from the long table, saving time and effort. 
+2. This plugin is useful for exact needs for your table implementations.
+3. Short code is : [wp_jdt id="table  id here"]    
+4. You can apply this short code into page/post's editor or also can add into PHP file. 
+   Like 
+   `<?php echo do_shortcode('[wp_jdt id="table  id here"]');?>` 
 
 =Shortcode Parameters=
 
@@ -61,6 +72,3 @@ Is this plugin prepared for multisites? Yes.
 * Stable Version release
 
 == Upgrade Notice ==
-
-
-
