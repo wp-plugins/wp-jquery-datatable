@@ -45,7 +45,7 @@ First of Save Plugin's settings. It will display 'WP jQuery DataTable' tab
    Like 
    `<?php echo do_shortcode('[wp_jdt id="table  id here"]');?>` 
 
-=Shortcode Parameters=
+= Shortcode Parameters =
 
 1. id: =(Required) Used table id as a parameter of id. Example [wp_jdt id="demo"] and table is `<table id="demo">...</table>`  
 2. info: Show information about the table. It return boolean. By default 'true'. Example [wp_jdt info="false"]
