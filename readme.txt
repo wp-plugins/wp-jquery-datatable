@@ -3,7 +3,7 @@ Contributors: biztechc
 Tags: WP jQuery DataTable, jQuery, jQuery DataTable, Table  
 Requires at least: 3.6.1
 Tested up to: 4.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 
 Features can be settings to meet your exact needs for your table implementations. like Paging,Ordering,search, etc... 
@@ -70,5 +70,8 @@ Is this plugin prepared for multisites? Yes.
 
 = 1.0.0 =
 * Stable Version release
+
+= 1.0.1 =
+* Solved jquery confliction
 
 == Upgrade Notice ==

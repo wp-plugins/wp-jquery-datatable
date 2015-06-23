@@ -4,7 +4,7 @@
  * Description: Features can be settings to meet your exact needs for your table implementations. like Paging,Ordering,Searching, etc... 
  * Author: biztechc
  * Author URI: http://www.biztechconsultancy.com
- * Version: 1.0.0
+ * Version: 1.0.1
  */
 
 add_action('admin_menu', 'wp_jdt_create_menu');
@@ -243,11 +243,10 @@ add_action('wp_enqueue_scripts','wp_jdt_style_and_script');  // add custom style
 function wp_jdt_style_and_script()
 {
     // css
-    wp_enqueue_style( 'jdt-style-data-tables', plugins_url('css/jquery.dataTables.css', __FILE__) );
+    wp_register_style( 'jdt-style-data-tables', plugins_url('css/jquery.dataTables.css', __FILE__) );
     
-    // js
-    wp_enqueue_script( 'jquery' );     
-    wp_enqueue_script( 'jdt-js-datatables', plugins_url('js/jquery.dataTables.js', __FILE__) );
+    // js     
+    wp_enqueue_script( 'jdt-js-datatables', plugins_url('js/jquery.dataTables.js', __FILE__), array('jquery') );
 }
 
 add_shortcode( 'wp_jdt', 'wp_jdt_shortcode' ); // add shortcode   [wp_jdt id="test" info="true" paging="true" page_length="7" paging_type="full_numbers" b_length_change="true" ordering="true" order_row_number="3" order_row_number_sort="desc" searching="true"]
@@ -302,6 +301,10 @@ function wp_jdt_shortcode( $atts, $content = "" ) {
             
         $wp_jdt_script .= "} ); \n";
     $wp_jdt_script .= "</script>";
+    
+    // css and js
+    wp_enqueue_style( 'jdt-style-data-tables' );
+    wp_enqueue_script( 'jdt-js-datatables' );
     
     return  $wp_jdt_script;
 }
