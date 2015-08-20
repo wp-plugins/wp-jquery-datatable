@@ -2,7 +2,7 @@
 Contributors: biztechc
 Tags: WP jQuery DataTable, jQuery, jQuery DataTable, Table  
 Requires at least: 3.6.1
-Tested up to: 4.1
+Tested up to: 4.3
 Stable tag: 1.0.1
 License: GPLv2 or later
 
